@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/spinner.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script src="js/script.js" defer></script>
+    <title>Open AI image generator</title>
+  </head>
+  <body>
+    <main>
+      <form id="image-form">
+        <h1>Describe An Image</h1>
+        <div class="form-controll">
+          <input type="text" id="prompt" placeholder="Enter text" />
+        </div>
+        <div class="form-controll">
+          <select name="size" id="size">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select>
+          <button type="submit" class="btn">Generate</button>
+        </div>
+      </form>
+      <section class="image">
+        <div class="image-container">
+          <h2 class="msg"></h2>
+          <img src="" alt="" id="image" />
+        </div>
+        <span class="loader"></span>
+      </section>
+    </main>
+  </body>
+</html>
